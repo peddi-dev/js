@@ -13,7 +13,7 @@ function makeFibonacciSeries() {
 			for (var i = 2; i < n; i++) {
 				fs[i] = fs[i - 1] + fs[i - 2];
 			}
-			console.log('fs: ' + fs)
+			//console.log('fs: ' + fs)
 			termN = fs[n - 1];
 
 			return termN;

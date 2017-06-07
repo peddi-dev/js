@@ -5,18 +5,42 @@
 <script src='main.js'></script>
 <script src='functions/memoizer.js'></script>
 <script src='functions/fibonacci.js'></script>
+<script src="classes/Fibonacci.js"></script>
+<script src="classes/Calculator.js"></script>
+<script src="classes/ClassesDemo.js"></script>
 </head>
 <script>
-	memoizerDemo = makeMemoizer();
+/* 	memoizerDemo = makeMemoizer();
 	console.log('Factorial of 5 is: ' + memoizerDemo.factorial(5));
 	console.log('Fibonacci of 10 is: ' + memoizerDemo.fibonacci(10));
 	var fib = makeFibonacciSeries();
 	console.log('Fibonacci of 10 is: ' + fib.fibonacci(10));
 	console.log('Fibonacci  of 10 is (recursion): ' + fib.fibonacciWithRecursion(-1));
+	var fibClsObj = new FibonacciSeries();
+	console.log('FibonacciSeries Class - 12th term: ' + fibClsObj.fibonacci(12));
+	let calObj = new Calculator(10, 20);
+	console.log('Calculator Class - add ' + calObj.numA + ', ' + calObj.numB + ': '  +calObj.add()); */
 	
+	console.log('--- Classes Demo----');
+	let polygon = new Polygon();
+	console.log(polygon.toString());
+	
+	let rectangle = new Rectangle(10,20);
+	console.log(rectangle.toString());
+	console.log(rectangle.area);
+	
+	let square = new Square(30);
+	console.log(square.toString());
+	console.log(square.area);
+	
+	let myDate = new MyDate();
+	console.log(myDate.getFormattedDate());
+
 </script>
 <input type="button" value="Test" title="Test" name="b1"
 	onclick="helloWorld()">
+	
+	
 
 
 <body>
